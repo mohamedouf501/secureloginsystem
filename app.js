@@ -40,7 +40,7 @@ app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
   next();
 });
-app.use((req, res, next) => {
+app.get((req, res, next) => {
   res.status(200).json({message: 'It works!'});
 });
 // 3) ROUTES

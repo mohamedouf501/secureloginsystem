@@ -6,7 +6,8 @@
   "scripts": {
     "start:dev": "nodemon server.js",
     "debug": " ndb node  server.js",
-    "start": "pm2 start server.js -i max "
+    "start": "node server.js",
+    "start:mp": "pm2 start server.js -i max "
 
   },
   "keywords": [],
